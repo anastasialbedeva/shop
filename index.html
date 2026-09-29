@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Зелёная полка — интернет-магазин комнатных растений">
+  <title>Зелёная полка — магазин комнатных растений</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Зелёная полка — на главную">
+        <span class="logo__icon" aria-hidden="true">🌿</span>
+        <span class="logo__text">Зелёная полка</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#catalog">Каталог</a></li>
+          <li><a class="nav__link" href="#about">О нас</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#cart" class="cart-link" aria-label="Перейти в корзину">
+        <span aria-hidden="true">🛒</span>
+        <span class="cart-link__text">Корзина</span>
+        <span class="cart-link__count" id="cartCount">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__tag">Доставка за 1 день · Гарантия приживаемости</p>
+          <h1 class="hero__title" id="heroTitle">Растения, которые приживутся у&nbsp;вас дома</h1>
+          <p class="hero__text">Подбираем неприхотливые и эффектные растения для квартиры и офиса. Каждое растение пересажено в свежий грунт и готово к новому дому.</p>
+          <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <span class="hero__tile hero__tile--big">🪴</span>
+          <span class="hero__tile">🌵</span>
+          <span class="hero__tile">🌸</span>
+          <span class="hero__tile">🌱</span>
+          <span class="hero__tile">🍃</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container shop">
+      <section class="catalog" id="catalog" aria-labelledby="catalogTitle">
+        <div class="section-head">
+          <h2 class="section-title" id="catalogTitle">Каталог</h2>
+          <p class="section-subtitle">8 растений в наличии</p>
+        </div>
+
+        <ul class="products" id="products">
+          <li>
+            <article class="card" data-id="monstera" data-name="Монстера деликатесная" data-price="2490" data-icon="🌿">
+              <div class="card__image" style="--tint: #d7e8d0" aria-hidden="true">🌿</div>
+              <div class="card__body">
+                <h3 class="card__title">Монстера деликатесная</h3>
+                <p class="card__desc">Крупные резные листья, любит рассеянный свет. Высота 60 см.</p>
+                <div class="card__bottom">
+                  <p class="card__price">2 490 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="cactus" data-name="Кактус Цереус" data-price="890" data-icon="🌵">
+              <div class="card__image" style="--tint: #f3e3c4" aria-hidden="true">🌵</div>
+              <div class="card__body">
+                <h3 class="card__title">Кактус Цереус</h3>
+                <p class="card__desc">Поливать раз в две недели. Идеален для солнечного подоконника.</p>
+                <div class="card__bottom">
+                  <p class="card__price">890 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="ficus" data-name="Фикус Бенджамина" data-price="1790" data-icon="🪴">
+              <div class="card__image" style="--tint: #e2ecd9" aria-hidden="true">🪴</div>
+              <div class="card__body">
+                <h3 class="card__title">Фикус Бенджамина</h3>
+                <p class="card__desc">Густая крона и мелкие глянцевые листья. Высота 80 см.</p>
+                <div class="card__bottom">
+                  <p class="card__price">1 790 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="orchid" data-name="Орхидея Фаленопсис" data-price="1590" data-icon="🌸">
+              <div class="card__image" style="--tint: #f6dbe3" aria-hidden="true">🌸</div>
+              <div class="card__body">
+                <h3 class="card__title">Орхидея Фаленопсис</h3>
+                <p class="card__desc">Цветёт до трёх месяцев. Две цветоносные стрелки.</p>
+                <div class="card__bottom">
+                  <p class="card__price">1 590 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="hibiscus" data-name="Гибискус китайский" data-price="1290" data-icon="🌺">
+              <div class="card__image" style="--tint: #f8d9cf" aria-hidden="true">🌺</div>
+              <div class="card__body">
+                <h3 class="card__title">Гибискус китайский</h3>
+                <p class="card__desc">Яркие крупные цветы всё лето. Любит тепло и влагу.</p>
+                <div class="card__bottom">
+                  <p class="card__price">1 290 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="sprout" data-name="Набор микрозелени" data-price="490" data-icon="🌱">
+              <div class="card__image" style="--tint: #e4f0cf" aria-hidden="true">🌱</div>
+              <div class="card__body">
+                <h3 class="card__title">Набор микрозелени</h3>
+                <p class="card__desc">Горшок, грунт и семена. Первый урожай через 10 дней.</p>
+                <div class="card__bottom">
+                  <p class="card__price">490 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="calathea" data-name="Калатея Орбифолия" data-price="2190" data-icon="🍃">
+              <div class="card__image" style="--tint: #d4e6df" aria-hidden="true">🍃</div>
+              <div class="card__body">
+                <h3 class="card__title">Калатея Орбифолия</h3>
+                <p class="card__desc">Полосатые листья, которые «складываются» на ночь.</p>
+                <div class="card__bottom">
+                  <p class="card__price">2 190 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="card" data-id="bamboo" data-name="Бамбук удачи" data-price="690" data-icon="🎍">
+              <div class="card__image" style="--tint: #e9ecd2" aria-hidden="true">🎍</div>
+              <div class="card__body">
+                <h3 class="card__title">Бамбук удачи</h3>
+                <p class="card__desc">Растёт прямо в воде. Три стебля в стеклянной вазе.</p>
+                <div class="card__bottom">
+                  <p class="card__price">690 ₽</p>
+                  <button class="btn btn--primary card__btn" type="button">Добавить в корзину</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <aside class="cart" id="cart" aria-labelledby="cartTitle">
+        <div class="cart__head">
+          <h2 class="cart__title" id="cartTitle">Корзина</h2>
+          <button class="cart__clear" id="clearBtn" type="button">Очистить</button>
+        </div>
+
+        <p class="cart__empty" id="cartEmpty">Корзина пока пуста — добавьте растение из каталога 🌱</p>
+        <ul class="cart__list" id="cartList"></ul>
+
+        <div class="cart__footer">
+          <p class="cart__total">
+            <span>Итого:</span>
+            <output id="cartTotal" aria-live="polite">0 ₽</output>
+          </p>
+          <button class="btn btn--primary btn--block" id="checkoutBtn" type="button" disabled>Оформить заказ</button>
+        </div>
+      </aside>
+    </div>
+
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <h2 class="section-title" id="aboutTitle">Почему мы</h2>
+        <ul class="features">
+          <li class="feature">
+            <span class="feature__icon" aria-hidden="true">🚚</span>
+            <h3 class="feature__title">Бережная доставка</h3>
+            <p class="feature__text">Упаковываем каждое растение так, чтобы ни один лист не пострадал.</p>
+          </li>
+          <li class="feature">
+            <span class="feature__icon" aria-hidden="true">💧</span>
+            <h3 class="feature__title">Инструкция по уходу</h3>
+            <p class="feature__text">Прикладываем карточку: как поливать, где ставить, чем подкармливать.</p>
+          </li>
+          <li class="feature">
+            <span class="feature__icon" aria-hidden="true">🔄</span>
+            <h3 class="feature__title">Замена за 14 дней</h3>
+            <p class="feature__text">Если растение не прижилось — заменим бесплатно.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__logo">🌿 Зелёная полка</p>
+        <p class="footer__text">Учебный проект интернет-магазина</p>
+      </div>
+      <address class="footer__contacts">
+        <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+        <a href="mailto:hello@green-shelf.example">hello@green-shelf.example</a>
+      </address>
+      <p class="footer__copy">© 2026 Зелёная полка</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="orderModal" aria-labelledby="orderTitle">
+    <div class="modal__inner">
+      <button class="modal__close" type="button" data-close aria-label="Закрыть окно">✕</button>
+
+      <form class="order-form" id="orderForm" novalidate>
+        <h2 class="order-form__title" id="orderTitle">Оформление заказа</h2>
+        <p class="order-form__sum">Сумма заказа: <strong id="orderTotal">0 ₽</strong></p>
+
+        <div class="form-row">
+          <div class="field">
+            <label class="field__label" for="firstName">Имя</label>
+            <input class="field__input" id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="Иван" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="lastName">Фамилия</label>
+            <input class="field__input" id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Иванов" required>
+            <span class="field__error" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="address">Адрес доставки</label>
+          <input class="field__input" id="address" name="address" type="text" autocomplete="street-address" placeholder="Город, улица, дом, квартира" required>
+          <span class="field__error" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="phone">Контактный номер телефона</label>
+          <input class="field__input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 123-45-67" required>
+          <span class="field__error" aria-live="polite"></span>
+        </div>
+
+        <button class="btn btn--primary btn--block" type="submit">Создать заказ</button>
+      </form>
+
+      <div class="order-success" id="orderSuccess" hidden>
+        <span class="order-success__icon" aria-hidden="true">✅</span>
+        <h2 class="order-success__title">Заказ создан!</h2>
+        <p class="order-success__text" id="orderSuccessText"></p>
+        <button class="btn btn--primary" type="button" data-close>Отлично</button>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
